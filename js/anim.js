@@ -66,7 +66,7 @@ var tl = new TimelineMax({delay: .5});
    staggerFromTo('#first .inner h3', 2, {autoAlpha:0}, {autoAlpha:1},{ease: Back.easeOut.config(1.7)}, '+=.1');
 
 var scene = new ScrollMagic.Scene({
-      triggerElement: "#first", offset: 0
+      triggerElement: "#first", offset:0
 }).setTween(tl).addTo(controller);
 
 var tween1 = new TimelineMax;
@@ -116,5 +116,5 @@ var tl3 = new TimelineMax();
 tl3.staggerFrom("footer li", 2, {autoAlpha:0, x:-200}, .25);
 
 var scene4 = new ScrollMagic.Scene({
-      triggerElement: "footer", offset:-200
+      triggerElement: "footer", offset:-600
 }).setTween(tl3).addTo(controller);

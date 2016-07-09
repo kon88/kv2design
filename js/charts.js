@@ -1,7 +1,15 @@
 $('#two #mySlider').slick({
         dots: true,
         infinite: true,
-        fade: true
+        fade: true,
+         responsive: [
+            {
+            breakpoint: 1060,
+            settings: 
+            {arrows: false}
+            }
+            ]
+            
     });
 
 $(function () {
