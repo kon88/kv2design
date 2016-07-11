@@ -320,6 +320,10 @@ footer {
         max-width: 80%;
         font-size: 18px;
     }
+
+    #first .header-content .inner a {
+        visibility: hidden;
+    }
     
     section {
         min-height: 400px;
@@ -396,6 +400,10 @@ textarea {
 
     #first .header-content .inner h1 {
         font-size: 8em;
+    }
+
+    #first .header-content .inner a {
+        visibility: hidden;
     }
 
     .feature {
