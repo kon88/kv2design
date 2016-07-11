@@ -57,13 +57,17 @@
 
 var controller = new ScrollMagic.Controller();
 
+var h31 = $('#first .inner h3');
+var anchor1 = $('#first .inner a');
+
 $('#first h1').lettering();
 
 CSSPlugin.defaultForce3D = false; 
 
 var tl = new TimelineMax({delay: .5});
    tl.staggerFromTo('#first [class^="char"]', 1, {autoAlpha:0, scale:4,}, {autoAlpha:1, scale:1},.10).
-   staggerFromTo('#first .inner h3', 2, {autoAlpha:0}, {autoAlpha:1},{ease: Back.easeOut.config(1.7)}, '+=.1');
+   staggerFromTo(h31, 2, {autoAlpha:0}, {autoAlpha:1},{ease: Back.easeOut}, '+=.1').
+   from(anchor1, .5, {autoAlpha: 0, y: 25},"-=.7");
 
 var scene = new ScrollMagic.Scene({
       triggerElement: "#first", offset:0
