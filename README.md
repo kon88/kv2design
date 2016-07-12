@@ -11,4 +11,8 @@ Velocity JS
 
 ScrollMagic
 
+Highcharts JS
+
+Slick JS
+
 
