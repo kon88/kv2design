@@ -65,9 +65,9 @@ $('#first h1').lettering();
 CSSPlugin.defaultForce3D = false; 
 
 var tl = new TimelineMax({delay: .5});
-   tl.staggerFromTo('#first [class^="char"]', 1, {autoAlpha:0, scale:4,}, {autoAlpha:1, scale:1},.10).
-   staggerFromTo(h31, 2, {autoAlpha:0}, {autoAlpha:1},{ease: Back.easeOut}, '+=.1').
-   from(anchor1, .5, {autoAlpha: 0, y: 25},"-=.7");
+   tl.staggerFromTo('#first [class^="char"]', .25, {autoAlpha:0, scale:4,}, {autoAlpha:1, scale:1},.10).
+   staggerFromTo(h31, 1, {autoAlpha:0}, {autoAlpha:1},{ease: Back.easeOut}, '+=.1').
+   from(anchor1, .3, {autoAlpha: 0, y: 25},"-=.7");
 
 var scene = new ScrollMagic.Scene({
       triggerElement: "#first", offset:0
@@ -85,8 +85,8 @@ var scene1 = new ScrollMagic.Scene({
  
 var vel1 = function(){
       $('#vel01').velocity("transition.bounceIn");
-      $('#vel02').velocity("transition.flipYIn", {delay: 500});
-      $('#vel03').velocity("callout.pulse", {delay: 1000});
+      $('#vel02').velocity("transition.flipYIn", {delay: 300});
+      $('#vel03').velocity("callout.pulse", {delay: 700});
 };
 
 $('#two h2').lettering("words");
